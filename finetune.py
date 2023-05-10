@@ -34,11 +34,11 @@ def train(
     batch_size: int = 128,
     micro_batch_size: int = 4,
     num_epochs: int = 3,
-    learning_rate: float = 3e-4,
+    learning_rate: float = 2e-5,
     cutoff_len: int = 256,
     val_set_size: int = 0,
     # lora hyperparams
-    lora_r: int = 8,
+    lora_r: int = 4,
     lora_alpha: int = 16,
     lora_dropout: float = 0.05,
     lora_target_modules: List[str] = [
